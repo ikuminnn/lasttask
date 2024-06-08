@@ -1,8 +1,0 @@
-p {
-  color: aqua;
-}
-
-p.test {
-  color: gold;
-  border-bottom: 1px solid #000;
-}
