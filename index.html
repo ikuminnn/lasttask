@@ -22,13 +22,32 @@
   <body>
 <!-- header -->
     <header class="l-header">
-      <h1 class="c-header__title">Hamburger</h1>
-      <div>
-        <form name="">
-          <input type="search" placeholder="キーワード">
-          <input type="button" class="c-button" placeholder="検索">
+      <div class="l-header__content">
+        <h1 class="c-header__title">Hamburger</h1>
+        <form action="#" class="c-form">   <!-- actionにサイトurlを入力してサイト内検索にする -->
+          <p><i class="fa-solid fa-dumbbell"></i></p>
+          <input type="search" name="search" placeholder="キーワード" class="c-form__keyword">
+          <input type="submit" name="submit" value="検索" class="c-form__button">
         </form>
       </div>
+<!-- サイドバーのメニュー -->
+      <div class="l-nav">
+        <button class="p-nav__content">
+          <span>Menu</span>
+        </button>
+        <nav class="p-nav__menu">
+          <ul class="c-nav__title" aria-hidden="true">ハンバーガー
+            <li class="c-nav__menu"><a href="#">ハンバーガー</a></li>
+            <li class="c-nav__menu"><a href="#">ハンバーガー</a></li>
+            <li class="c-nav__menu"><a href="#">ハンバーガー</a></li>
+            <li class="c-nav__menu"><a href="#">ハンバーガー</a></li>
+            <li class="c-nav__menu"><a href="#">ハンバーガー</a></li>
+            <li class="c-nav__menu"><a href="#">ハンバーガー</a></li>
+            <li class="c-nav__menu"><a href="#">ハンバーガー</a></li>
+          </ul>
+        </nav>
+      </div>
+      
     </header>
 
 <!-- main -->
