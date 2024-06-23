@@ -1,3 +1,13 @@
+body {
+  color: tomato;
+}
+body h2 {
+  font-size: 20px;
+}
+
+/*
+*=== foundation ====================================
+*/
 /* .roboto-regular {
  font-family: "Roboto", sans-serif;
  font-weight: 400;
