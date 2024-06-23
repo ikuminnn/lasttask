@@ -27,7 +27,7 @@
         <form action="#" class="c-form">   <!-- actionにサイトurlを入力してサイト内検索にする -->
           <p><i class="fa-solid fa-dumbbell"></i></p>
           <input type="search" name="search" placeholder="キーワード" class="c-form__keyword">
-          <input type="submit" name="submit" value="検索" class="c-form__button">
+          <a href="#"></a><input type="submit" name="submit" value="検索" class="c-form__button"></a>
         </form>
       </div>
 <!-- サイドバーのメニュー -->
@@ -36,8 +36,9 @@
           <span>Menu</span>
         </button>
         <nav class="p-nav__content">
-          <h2 class="p-nav__menu u-nav__title">Menu</h2>
-          <ul class="c-nav__title" aria-hidden="true"><h3><a href="#">ハンバーガー</a></h3>
+          <h2 class="p-nav__title u-nav__title">Menu</h2>
+          <ul class="p-nav__menu" aria-hidden="true">
+            <h3 class="c-nav__title"><a href="#">ハンバーガー</a></h3>
             <li class="c-nav__menu"><a href="#">ハンバーガー</a></li>
             <li class="c-nav__menu"><a href="#">チーズバーガー</a></li>
             <li class="c-nav__menu"><a href="#">テリヤキバーガー</a></li>
@@ -46,13 +47,15 @@
             <li class="c-nav__menu"><a href="#">ベーコンバーガー</a></li>
             <li class="c-nav__menu"><a href="#">チキンバーガー</a></li>
           </ul>
-          <ul class="c-nav__title" aria-hidden="true"><h3><a href="#">サイド</a></h3>
+          <ul class="p-nav__menu" aria-hidden="true">
+            <h3 class="c-nav__title"><a href="#">サイド</a></h3>
             <li class="c-nav__menu"><a href="#">ポテト</a></li>
             <li class="c-nav__menu"><a href="#">サラダ</a></li>
             <li class="c-nav__menu"><a href="#">ナゲット</a></li>
             <li class="c-nav__menu"><a href="#">コーン</a></li>
           </ul>
-          <ul class="c-nav__title" aria-hidden="true"><h3><a href="#">ドリンク</a></h3>
+          <ul class="p-nav__menu" aria-hidden="true">
+            <h3 class="c-nav__title"><a href="#">ドリンク</a></h3>
             <li class="c-nav__menu"><a href="#">コーラ</a></li>
             <li class="c-nav__menu"><a href="#">ファンタ</a></li>
             <li class="c-nav__menu"><a href="#">オレンジ</a></li>
@@ -75,7 +78,7 @@
       <article class="p-theme__content">
         <div class="c-section">
           <h2 class="c-section__title">Take Out</h2>
-          <ul class="p-theme__lists">
+          <ul class="p-theme__lists"><a href="#">
             <img src="/img/takeout.jpg" alt="TakeOut背景">            <li class="p-theme__list">
               <h3>Take OUT</h3>
               <p>当店で利用できるテイクアウト商品を記載しています。このサイトよりLINE登録をしていただくと、お得なクーポンや当日使えるポイントなど活用できます。</p>
@@ -84,9 +87,9 @@
               <h3>Take OUT</h3>
               <p>当店で利用できるテイクアウト商品を記載しています。このサイトよりLINE登録をしていただくと、お得なクーポンや当日使えるポイントなど活用できます。</p>
             </li>
-          </ul>
+          </a></ul>
         </div>
-        <div class="c-section">
+        <div class="c-section"><a href="#">
           <h2 class="c-section__title">Eat In</h2>
           <ul class="p-theme__lists">
             <img src="/img/eatin.jpg" alt="EatIn背景">
@@ -99,7 +102,7 @@
               <p>店内でお食事いただける商品を記載しております。当店のおすすめや無添加野菜を使用したメニューなどがあります。お席のご予約はできませんのでご了承ください。</p>
             </li>
           </ul>
-        </div>
+        </a></div>
       </article>
 <!-- p-access 地図 -->
       <section class="p-access">
