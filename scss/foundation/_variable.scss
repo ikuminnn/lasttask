@@ -1,0 +1,29 @@
+
+$color-base: #fffdfa;
+$color-header: #fff7ef;
+$color-sidebar-bg: #f2ede9;
+$color-font-70: #707070;
+$color-font-10: #3c2a10;
+
+$color-white: #fff;
+$color-brown: #3c2b1c;
+$color-gray: #f5f5f5;
+
+//ブレイクポイント設定
+// ==========================================
+@mixin breakpoint($point) {
+  @if $point == tablet {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  }
+  @if $point == pc {
+    @media (min-width: 1280px) {
+      @content;
+    }
+  }
+}
+@include breakpoint(tablet){
+}
+@include breakpoint(pc){
+}

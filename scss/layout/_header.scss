@@ -1,0 +1,14 @@
+@use "../foundation/variable" as *;
+
+.l-header {
+  color: $color-font-70;
+  background-color: $color-header;
+  &__button {
+    color: $color-font-70;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
