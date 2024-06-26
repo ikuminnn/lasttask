@@ -1,4 +1,4 @@
-@use "./variable" as *;
+@use "./variable";
 
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  background: $color-base;
+  background-color: variable.$color-base;
   width: 100%;
   font-size: 1.6rem;
   font-family: "Roboto", "M PLUS 1p", sans-serif;

@@ -1,8 +1,8 @@
 @use "../foundation/variable";
 
 .p-nav {
-  color: $color-font-70;
-  background-color: $color-sidebar-bg;
+  color: variable$color-font-70;
+  background-color: variable$color-sidebar-bg;
   width: 87%;
   height: 100%;
   display: block;

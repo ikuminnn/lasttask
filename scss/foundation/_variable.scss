@@ -9,6 +9,7 @@ $color-white: #fff;
 $color-brown: #3c2b1c;
 $color-gray: #f5f5f5;
 
+
 //ブレイクポイント設定
 // ==========================================
 @mixin breakpoint($point) {
@@ -23,6 +24,7 @@ $color-gray: #f5f5f5;
     }
   }
 }
+
 @include breakpoint(tablet){
 }
 @include breakpoint(pc){

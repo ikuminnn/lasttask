@@ -2,12 +2,13 @@
 *=== foundation ====================================
 */
 
-@use "./foundation/base";
 @use "./foundation/variable";
+@use "./foundation/base";
 
 /* layout
     ======================================*/
 @use "./layout/header";
+@use "./layout/nav";
 
 /* Object
    =======================================*/
@@ -17,4 +18,4 @@
 
 /* project
    =======================================*/
-@use "../object/project/nav";
+
