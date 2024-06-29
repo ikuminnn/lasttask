@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- ファビコン -->
     <link rel="icon" type="image/png" href="img/favicon.png">
-    <!-- リセットCSS -->
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <!-- リセットCSS
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> -->
     <!-- googleフォント -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +26,7 @@
         <span>Menu</span>
       </button>
       <div class="l-header__content">
-        <h1 class="c-header__title">Hamburger</h1>
+        <h1 class="l-header__title"><a href="#">Hamburger</a></h1>
         <form action="#" class="c-form">   <!-- actionにサイトurlを入力してサイト内検索にする -->
           <p><i class="fa-solid fa-dumbbell"></i></p>
           <input type="search" name="search" placeholder="キーワード" class="c-form__keyword">
@@ -34,10 +34,10 @@
         </form>
       </div>
 <!-- サイドバーのメニュー -->
-      <div class="p-nav">
-        <nav class="p-nav__content">
-          <h2 class="p-nav__title u-nav__title">Menu</h2>
-          <ul class="p-nav__menu" aria-hidden="true">
+      <div class="l-nav">
+        <nav class="l-nav__content">
+          <h2 class="l-nav__title u-nav__title">Menu</h2>
+          <ul class="l-nav__menu" aria-hidden="true">
             <h3 class="c-nav__title"><a href="#">ハンバーガー</a></h3>
             <li class="c-nav__menu"><a href="#">ハンバーガー</a></li>
             <li class="c-nav__menu"><a href="#">チーズバーガー</a></li>
@@ -70,7 +70,7 @@
 <!-- main -->
     <main>
 <!-- p-fv　ファーストビュー -->
-      <section class="l-fv c-section">
+      <section class="l-fv">
         <img class="l-fv__img" src="/img/saittitle.jpg" alt="ページトップ画像">
         <h2 class="c-section__title">ダミーサイト</h2>
       </section>

@@ -1,0 +1,13 @@
+@use "../foundation/mixin" as m;
+
+.l-fv {
+  color: #fff;
+  &__img {
+    height: 285px;
+    width: 100%;
+    @include m.breakpoint(pc){
+      height: 530px;
+      width: 81%;
+    }
+  }
+}

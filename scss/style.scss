@@ -1,21 +1,15 @@
-/*
-*=== foundation ====================================
-*/
+@charset "uft-8";
 
-@use "./foundation/variable";
-@use "./foundation/base";
-
-/* layout
-    ======================================*/
-@use "./layout/header";
-@use "./layout/nav";
-
-/* Object
-   =======================================*/
-/* component
-   =======================================*/
+@use "./foundation/foundation";
 
 
-/* project
-   =======================================*/
 
+// @use "./foundation/variable";
+// @use "./foundation/mixin";
+// @use "./foundation/base";
+
+// /* layout ======================================*/
+// @use "./layout/header";
+// @use "./layout/nav";
+
+// project ======================================
