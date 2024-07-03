@@ -4,21 +4,34 @@
 .l-header {
   color: v.$color-font-70;
   background-color: v.$color-header;
-  &__button {
-    color: v.$color-font-70;
-  }
   &__content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
     @include m.breakpoint(pc){
       flex-direction: row;
       justify-content: space-between;
+      padding-top: 25px;
+      margin-bottom: 25px;
+    }
+  }
+  &__button {
+    color: v.$color-font-70;
+    animation: 300ms;
+    font-weight: 600;
+    font-size: 18px;
+    @include m.breakpoint(pc){
+      display: none;
     }
   }
   &__title {
     text-align: center;
-    font-size: 40px;
+    font-size: 38px;
     font-weight: 700;
+    margin-bottom: 25px;
+    @include m.breakpoint(pc){
+      margin-bottom: 0;
+    }
   }
 }
