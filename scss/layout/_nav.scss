@@ -13,4 +13,18 @@
   @include m.breakpoint(pc) {
     width: 19%;
   }
+  &__title {
+    padding: 80px 0 90px 38px;
+    font-size: 2.8rem;
+    font-weight: 700;
+    @include m.breakpoint(pc){
+      display: none;
+    }
+  }
+  
+  &__menu {
+    @include m.breakpoint(pc){
+      padding-top: 170px;
+    }
+  }
 }

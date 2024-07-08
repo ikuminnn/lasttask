@@ -2,12 +2,14 @@
 
 .l-fv {
   color: #fff;
-  &__img {
-    height: 285px;
-    width: 100%;
-    @include m.breakpoint(pc){
-      height: 530px;
-      width: 81%;
-    }
+  position: relative;
+    // @include m.breakpoint(pc){
+    //   height: 530px;
+    //   width: 81%;
+    // }
+  &__title {
+    position: absolute;
+    top: 50%;
+    left: 25px;
   }
 }

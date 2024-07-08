@@ -10,7 +10,11 @@
 // component
 @forward "../component/form";
 @forward "../component/nav";
+@forward "../component/section";
 
 // project
+@forward "../project/theme";
+@forward "../project/access";
 
 // utility
+@forward "../utility/access";

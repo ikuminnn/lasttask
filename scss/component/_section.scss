@@ -1,0 +1,17 @@
+.c-section {
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  &__title {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    font-size: 3rem;
+  }
+  &__inner {
+    margin: 16px;
+    position: absolute;
+    top: 230px;
+    left: 0;
+  }
+}
