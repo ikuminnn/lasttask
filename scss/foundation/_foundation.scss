@@ -6,6 +6,7 @@
 @forward "../layout/header";
 @forward "../layout/nav";
 @forward "../layout/fv";
+@forward "../layout/footer";
 
 // component
 @forward "../component/form";
@@ -17,4 +18,6 @@
 @forward "../project/access";
 
 // utility
-@forward "../utility/access";
+@forward "../utility/title";
+@forward "../utility/container";
+@forward "../utility/main";

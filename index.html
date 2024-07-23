@@ -19,8 +19,8 @@
     <link rel="stylesheet" href="/css/style.min.css">
   </head>
 
-  <body>
-<!-- header -->
+  <body class="u-container">
+    <!-- header -->
     <header class="l-header">
       <div class="l-header__content">
         <button class="l-header__button">
@@ -34,75 +34,71 @@
           <!-- </form> -->
         </div>
       </div>
-<!-- サイドバーのメニュー -->
-      <div class="l-nav">
-        <nav class="l-nav__content">
-          <p class="l-nav__title">Menu</p>
-          <ul class="l-nav__menu" aria-hidden="true">
-            <li class="c-nav__title"><h3><a href="#">バーガー</a></h3>
-              <ul class="c-nav__menu">
-                <li><a href="#">ハンバーガー</a></li>
-                <li><a href="#">チーズバーガー</a></li>
-                <li><a href="#">テリヤキバーガー</a></li>
-                <li><a href="#">アボカドバーガー</a></li>
-                <li><a href="#">フィッシュバーガー</a></li>
-                <li><a href="#">ベーコンバーガー</a></li>
-                <li><a href="#">チキンバーガー</a></li>
-              </ul>
-            </li>
-            <li class="c-nav__title"><h3><a href="#">サイド</a></h3>
-              <ul class="c-nav__menu">
-                <li><a href="#">ポテト</a></li>
-                <li><a href="#">サラダ</a></li>
-                <li><a href="#">ナゲット</a></li>
-                <li><a href="#">コーン</a></li>
-              </ul>
-            </li>
-            <li class="c-nav__title"><h3><a href="#">ドリンク</a></h3>
-              <ul class="c-nav__menu">
-                <li><a href="#">コーラ</a></li>
-                <li><a href="#">ファンタ</a></li>
-                <li><a href="#">オレンジ</a></li>
-                <li><a href="#">アップル</a></li>
-                <li><a href="#">紅茶（Ice/Hot）</a></li>
-                <li><a href="#">コーヒー（Ice/Hot）</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-      </div>
     </header>
+    <!-- サイドバーのメニュー -->
+    <aside class="l-nav">
+      <nav class="l-nav__content">
+        <p class="l-nav__title">Menu</p>
+        <ul class="l-nav__menu" aria-hidden="true">
+          <li class="c-nav__title"><h3><a href="#">バーガー</a></h3>
+            <ul class="c-nav__menu">
+              <li><a href="#">ハンバーガー</a></li>
+              <li><a href="#">チーズバーガー</a></li>
+              <li><a href="#">テリヤキバーガー</a></li>
+              <li><a href="#">アボカドバーガー</a></li>
+              <li><a href="#">フィッシュバーガー</a></li>
+              <li><a href="#">ベーコンバーガー</a></li>
+              <li><a href="#">チキンバーガー</a></li>
+            </ul>
+          </li>
+          <li class="c-nav__title"><h3><a href="#">サイド</a></h3>
+            <ul class="c-nav__menu">
+              <li><a href="#">ポテト</a></li>
+              <li><a href="#">サラダ</a></li>
+              <li><a href="#">ナゲット</a></li>
+              <li><a href="#">コーン</a></li>
+            </ul>
+          </li>
+          <li class="c-nav__title"><h3><a href="#">ドリンク</a></h3>
+            <ul class="c-nav__menu">
+              <li><a href="#">コーラ</a></li>
+              <li><a href="#">ファンタ</a></li>
+              <li><a href="#">オレンジ</a></li>
+              <li><a href="#">アップル</a></li>
+              <li><a href="#">紅茶（Ice/Hot）</a></li>
+              <li><a href="#">コーヒー（Ice/Hot）</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </aside>
 
-<!-- main -->
-    <main>
-<!-- p-fv　ファーストビュー -->
+    <!-- main -->
+    <main class="u-main__container">
+      <!-- p-fv　ファーストビュー -->
       <section class="l-fv">
-        <img class="l-fv__img" src="/img/saittitle.jpg" alt="ページトップ画像">
+        <!-- <img class="l-fv__img" src="/img/saittitle.jpg" alt="ページトップ画像"> -->
         <h2 class="l-fv__title">ダミーサイト</h2>
       </section>
-<!-- p-theme　takeout/eatin -->
+      <!-- p-theme　takeout/eatin -->
       <article class="p-theme__content">
-        <div class="c-section">
+        <div class="c-section"><a href="#">
           <img src="/img/takeout.jpg" alt="TakeOut背景">
-          <div class="c-section__inner">
-            <h2 class="c-section__title">Take Out</h2>
-            <hr>
-            <ul class="p-theme__lists"><a href="#">
-              <li class="p-theme__list">
-                <h3>Take OUT</h3>
-                <p>当店で利用できるテイクアウト商品を記載しています。このサイトよりLINE登録をしていただくと、お得なクーポンや当日使えるポイントなど活用できます。</p>
-              </li>
-              <li class="p-theme__list">
-                <h3>Take OUT</h3>
-                <p>当店で利用できるテイクアウト商品を記載しています。このサイトよりLINE登録をしていただくと、お得なクーポンや当日使えるポイントなど活用できます。</p>
-              </li>
-            </a></ul>
-          </div>
-        </div>
+          <h2 class="c-section__title">Take Out</h2>
+          <ul class="p-theme__lists">
+            <li class="p-theme__list">
+              <h3>Take Out</h3>
+              <p>当店で利用できるテイクアウト商品を記載しています。このサイトよりLINE登録をしていただくと、お得なクーポンや当日使えるポイントなど活用できます。</p>
+            </li>
+            <li class="p-theme__list">
+              <h3>Take Out</h3>
+              <p>当店で利用できるテイクアウト商品を記載しています。このサイトよりLINE登録をしていただくと、お得なクーポンや当日使えるポイントなど活用できます。</p>
+            </li>
+          </ul>
+        </a></div>
         <div class="c-section"><a href="#">
           <img src="/img/eatin.jpg" alt="EatIn背景">
           <h2 class="c-section__title">Eat In</h2>
-          <hr>
           <ul class="p-theme__lists">
             <li class="p-theme__list">
               <h3>Eat In</h3>
@@ -115,27 +111,23 @@
           </ul>
         </a></div>
       </article>
-<!-- p-access 地図 -->
+      <!-- p-access 地図 -->
       <section class="p-access">
-        <div class="c-section">
-          <h2 class="c-section__title">見出しが入ります</h2>
-          <hr class="u-access__line">
+        <div class="p-access__content">
+          <img src="/img/access.jpg" alt="地図">
+          <h2 class="u-section__title">見出しが入ります</h2>
           <p>テキストが入ります。アクセス方法です。テキストが入ります。アクセス方法です。テキストが入ります。アクセス方法です。テキストが入ります。アクセス方法です。テキストが入ります。アクセス方法です。テキストが入ります。アクセス方法です。テキストが入ります。アクセス方法です。テキストが入ります。アクセス方法です。テキストが入ります。アクセス方法です。テキストが入ります。アクセス方法です。テキストが入ります。アクセス方法です。</p>
-          <div class="access-img">
-            <img src="/img/access.jpg" alt="地図">
-          </div>
         </div>
       </section>
     </main>
 
-<!-- footer -->
+    <!-- footer -->
     <footer class="l-footer">
       <div class="l-footer__content">
-        <img src="/img/footer-back.png" alt="フッター背景">
-        <p>ショップ情報<span>ヒストリー</span></p>
-        <small class="l-footer__copyright">Copyright: RaiseTech</small>
+        <!-- <img src="/img/footer-back.png" alt="フッター背景"> -->
+        <p><a href="#">ショップ情報</a><span><a href="#">ヒストリー</a></span></p>
+        <p class="l-footer__copyright"><small>Copyright: RaiseTech</small></p>
       </div>
     </footer>
   </body>
 </html>
-

@@ -6,25 +6,31 @@
   background-color: v.$color-sidebar-bg;
   width: 87%;
   height: 100%;
-  display: block;
+  display: none;
   @include m.breakpoint(tablet){
     width: 44%;
   }
   @include m.breakpoint(pc) {
-    width: 19%;
+    display: block;
+    width: 100%;
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
   }
+
   &__title {
-    padding: 80px 0 90px 38px;
-    font-size: 2.8rem;
-    font-weight: 700;
+    display: none;
     @include m.breakpoint(pc){
-      display: none;
+      display: block;
+      padding: 60px 0 90px 38px;
+      font-size: 2.8rem;
+      font-weight: 700;
     }
   }
   
   &__menu {
+    padding-top: 100px;
     @include m.breakpoint(pc){
-      padding-top: 170px;
+      padding: 0;
     }
   }
 }

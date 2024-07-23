@@ -1,0 +1,14 @@
+@use "../foundation/mixin" as m;
+
+.u-section__title {
+  color: #fff;
+  position: absolute;
+  top: 40px;
+  left: 42px;
+  font-size: 3rem;
+  @include m.breakpoint(pc){
+    font-size: 3.6rem;
+    top: 80px;
+    left: 120px;
+  }
+}

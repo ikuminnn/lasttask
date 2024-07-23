@@ -4,16 +4,18 @@
 .l-header {
   color: v.$color-font-70;
   background-color: v.$color-header;
+  grid-column: 1;
+  grid-row: 1;
   &__content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 25px;
+    padding-bottom: 25px;
     @include m.breakpoint(pc){
       flex-direction: row;
       justify-content: space-between;
-      padding-top: 25px;
-      margin-bottom: 25px;
+      // padding-top: 25px;
+      // padding-bottom: 10px;
     }
   }
   &__button {
@@ -21,6 +23,11 @@
     animation: 300ms;
     font-weight: 600;
     font-size: 18px;
+    margin-left: auto;
+    padding: 6px 6px 0 0;
+    @include m.breakpoint(tablet){
+      padding: 10px 10px 0 0;
+    }
     @include m.breakpoint(pc){
       display: none;
     }
