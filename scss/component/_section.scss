@@ -18,7 +18,7 @@
     @include m.breakpoint(pc){
       font-size: 5rem;
     }
-    &::after {
+    &::after {  // タイトル下の線
       content: "";
       width: 30px;
       height: 4px;

@@ -629,25 +629,23 @@ input {
   flex-grow: 1;
 }
 
+.access_bg {
+  background: url(/img/access.jpg) top left/cover;
+  opacity: 0.6 #000;
+}
+
 .p-access__content {
   display: block;
-  width: 100%;
-  height: 100%;
-  position: relative;
+  height: auto;
 }
 .p-access__content p {
-  position: absolute;
   color: #fff;
-  top: 110px;
-  left: 0;
   padding: 20px 40px 50px;
   z-index: 2;
 }
 @media (min-width: 1280px) {
   .p-access__content p {
     width: 44%;
-    top: 250px;
-    left: 120px;
     padding: 0;
   }
 }
@@ -693,9 +691,6 @@ input {
 
 .u-section__title {
   color: #fff;
-  position: absolute;
-  top: 40px;
-  left: 42px;
   font-size: 3rem;
 }
 @media (min-width: 1280px) {
