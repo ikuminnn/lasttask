@@ -1,9 +1,30 @@
-@use "../foundation/mixin"as m;
+@use "../foundation/mixin" as *;
 
-.p-access {
-  padding-top: 25px;
+// .access_bg {
+//   background: url(/img/access.jpg) top left / cover;  
+// }
+.p-access__content {
+  display: block;
+  height: auto;
   position: relative;
-  & h2::after {
+  p {
+    position: absolute;
+    color: #fff;
+    top: 110px;
+    left: 0;
+    padding: 20px 40px 50px;
+    z-index: 2;
+    @include breakpoint(pc){
+      width: 44%;
+      top: 250px;
+      left: 120px;
+      padding: 0;
+    }
+  }
+  h2 {
+    z-index: 2;
+  }
+  h2::after {
     content: "";
     width: 75px;
     height: 2px;
@@ -12,63 +33,26 @@
     position: absolute;
     bottom: -10px;
     left: 0;
-    @include m.breakpoint(pc){
+    @include breakpoint(pc){
       bottom: -50px;
     }
   }
-
-  &__content {
-    position: relative;
-    background-color: #000;
+  // 黒半透明を重ねるところ
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
-    // display: inline-block;
-    img {
-      opacity: 0.6;
-      display: block;
+    height: 60%;
+    background-color: rgba(0,0,0,.3);
+    z-index: 1;
+    @include breakpoint(tablet){
+      height: 100%;
     }
-    p {
-      position: absolute;
-      color: #fff;
-      top: 110px;
-      left: 0;
-      padding: 20px 40px 50px;
-      z-index: 2;
-      @include m.breakpoint(pc){
-        width: 44%;
-        top: 250px;
-        left: 120px;
-        padding: 0;
-      }
-    }
-    h2 {
-      z-index: 2;
-    }
-
-    &::before {
-      content: '';
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 60%;
-      background-color: rgba(0,0,0,.3);
-      z-index: 1;
-      @include m.breakpoint(tablet){
-        height: 100%;
-      }
-      @include m.breakpoint(pc){
-        width: 60%;
-      }
+    @include breakpoint(pc){
+      width: 60%;
     }
   }
 }
-
-// position: absolute;
-// content: "";
-// left: 0;
-// top: 0;
-// width: 100%;
-// height: auto;
-// background: rgba(0,0,0,.4);

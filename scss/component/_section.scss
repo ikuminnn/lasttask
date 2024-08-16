@@ -3,16 +3,10 @@
 .c-section {
   display: flex;
   flex: 1 0 50%;
-  width: 100%;
   height: auto;
   position: relative;
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    @include m.breakpoint(tablet){
-      object-fit: cover;
-    }
+  a {
+    align-self: flex-end;
   }
   
   &__title {
@@ -36,10 +30,16 @@
     }
   }
   &:first-child {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     @include m.breakpoint(tablet){
-      padding: 0;
+      margin: 0;
     }
   }
+}
 
+.takeout_bg {
+  background: url(/img/takeout.jpg) top left / cover;
+}
+.eatin_bg {
+  background: url(/img/eatin.jpg) top left / cover;
 }

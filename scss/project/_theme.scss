@@ -1,27 +1,28 @@
-@use "../foundation/variable" as v;
-@use "../foundation/mixin" as m;
+@use "../foundation/variable" as *;
+@use "../foundation/mixin" as *;
 
 .p-theme__content {
   padding: 20px 20px 25px;
-  @include m.breakpoint(tablet){
+  @include breakpoint(tablet){
     display: flex;
     justify-content: center;
     flex-direction: row;
     padding: 40px;
     gap: 40px;
   }
-  @include m.breakpoint(pc){
-    padding: 120px 120px 130px;
+  @include breakpoint(pc){
+    padding: 100px 100px 100px;
     gap: 80px;
   }
 }
 
 .p-theme__lists {
   padding: 0 16px 16px;
-  color: v.$color-font-10;
-  position: absolute;
-  top: 200px;
-  left: 0;
+  color: $color-font-10;
+  margin-top: 300px;
+  // position: absolute;
+  // top: 200px;
+  // left: 0;
   display: flex;
   flex-direction: column;
 }

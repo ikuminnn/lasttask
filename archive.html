@@ -22,6 +22,9 @@
   <body class="u-container">
     <!-- header -->
     <header class="l-header__content">
+      <button class="l-header__button">
+        <span>Menu</span>
+      </button>
       <h1 class="l-header__title"><a href="#">Hamburger</a></h1>
       <div class="c-form__mark">
         <!-- <form action="#" class="c-form">   actionにサイトurlを入力してサイト内検索にする -->
@@ -32,11 +35,6 @@
     </header>
     <!-- サイドバーのメニュー -->
     <aside class="l-nav">
-      <button class="l-header__button js-btn">
-        <span class="l-header__button-line l-header__button-line1"></span>
-        <span class="l-header__button-line2">Menu</span>
-        <span class="l-header__button-line l-header__button-line3"></span>
-      </button>
       <nav class="l-nav__content">
         <p class="l-nav__title">Menu</p>
         <ul class="l-nav__menu" aria-hidden="true">
@@ -71,7 +69,6 @@
           </li>
         </ul>
       </nav>
-      <div class="c-nav__bg-black js-bg-black"></div>  <!--背景黒-->
     </aside>
 
     <!-- main -->
@@ -83,8 +80,8 @@
       </section>
       <!-- p-theme　takeout/eatin -->
       <article class="p-theme__content">
-        <div class="c-section takeout_bg">
-          <a href="#">
+        <div class="c-section"><a href="#">
+          <img src="/img/takeout.jpg" alt="TakeOut背景">
           <h2 class="c-section__title">Take Out</h2>
           <ul class="p-theme__lists">
             <li class="p-theme__list">
@@ -95,10 +92,10 @@
               <h3>Take Out</h3>
               <p>当店で利用できるテイクアウト商品を記載しています。このサイトよりLINE登録をしていただくと、お得なクーポンや当日使えるポイントなど活用できます。</p>
             </li>
-          </ul></a>
-        </div>
-        <div class="c-section eatin_bg">
-          <a href="#">
+          </ul>
+        </a></div>
+        <div class="c-section"><a href="#">
+          <img src="/img/eatin.jpg" alt="EatIn背景">
           <h2 class="c-section__title">Eat In</h2>
           <ul class="p-theme__lists">
             <li class="p-theme__list">
@@ -109,13 +106,13 @@
               <h3>Eat In</h3>
               <p>店内でお食事いただける商品を記載しております。当店のおすすめや無添加野菜を使用したメニューなどがあります。お席のご予約はできませんのでご了承ください。</p>
             </li>
-          </ul></a>
-        </div>
+          </ul>
+        </a></div>
       </article>
       <!-- p-access 地図 -->
-      <section>
-        <div class="p-access__content access_bg">
-          <!-- <img src="/img/access.jpg" alt="地図"> -->
+      <section class="p-access">
+        <div class="p-access__content">
+          <img src="/img/access.jpg" alt="地図">
           <h2 class="u-section__title">見出しが入ります</h2>
           <p>テキストが入ります。アクセス方法です。テキストが入ります。アクセス方法です。テキストが入ります。アクセス方法です。テキストが入ります。アクセス方法です。テキストが入ります。アクセス方法です。テキストが入ります。アクセス方法です。テキストが入ります。アクセス方法です。テキストが入ります。アクセス方法です。テキストが入ります。アクセス方法です。テキストが入ります。アクセス方法です。テキストが入ります。アクセス方法です。</p>
         </div>
@@ -130,7 +127,5 @@
         <p class="l-footer__copyright"><small>Copyright: RaiseTech</small></p>
       </div>
     </footer>
-    <script src="./JavaScript/jquery-3.7.1.min.js"></script>
-    <script src="./js/nav.js"></script>
   </body>
 </html>

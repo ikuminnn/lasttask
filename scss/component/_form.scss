@@ -2,16 +2,20 @@
 @use "../foundation/mixin" as m;
 
 input {
-  height: 38px;
-  border: solid 1.5px v.$color-font-70;
+  height: 40px;
+  border: solid 1.2px v.$color-font-70;
   border-radius: 8px;
 }
 
 .c-form__mark {
   display: flex;
+  width: 84.8%;
   position: relative;     //虫眼鏡の基準値
+  @include m.breakpoint(tablet){
+    width: 65.5%;
+  }
   @include m.breakpoint(pc) {
-    display: block;
+    width: 35.1%;
   }
 }
 // 虫眼鏡のマーク
@@ -29,11 +33,20 @@ input {
 .c-form__keyword {
   background-color: v.$color-white;
   margin-right: 15px;
-  text-indent: 3rem;
+  text-indent: 3.2rem;
+  width: 68%;
+  @include m.breakpoint(tablet){
+    width: 72.5%;
+  }
 }
 
 .c-form__button {
   font-size: 1.3rem;
-  font-weight: 500;
+  font-weight: 600;
+  color: v.$color-font-70;
   background: linear-gradient(-90deg, v.$color-sidebar-bg, #ded8d3);
+  width: 28.3%;
+  @include m.breakpoint(tablet){
+    width: 25%;
+  }
 }
