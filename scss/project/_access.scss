@@ -1,31 +1,26 @@
 @use "../foundation/mixin" as *;
 
 .access_bg {
-  background: url(/img/access.jpg) top left / cover;
-  opacity: 0.6;
+  background: url(/img/access.jpg) center / cover;
+  // position: relative;
 }
 
 .p-access {
+  position: relative;
+  // overflow: hidden;
   &__content {
     display: block;
-    height: auto;
-    // position: relative;
+    // height: auto;
     p {
       color: #fff;
-      // position: absolute;
-      // top: 110px;
-      // left: 0;
-      padding: 20px 40px 50px;
-      z-index: 2;
+      position: relative;
+      padding: 120px 40px 50px;
+      z-index: 3;
       @include breakpoint(pc){
-        width: 44%;
-        // top: 250px;
-        // left: 120px;
-        padding: 0;
+        width: 55%;
+        padding-top: 250px;
+        padding-left: 120px;
       }
-    }
-    h2 {
-      z-index: 2;
     }
     h2::after {
       content: "";
@@ -40,16 +35,25 @@
         bottom: -50px;
       }
     }
-    // 黒半透明を重ねるところ
+    // 地図に乗せる黒
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0; bottom: 0;
+      left: 0; right: 0;
+      background: black;
+      opacity: 0.3;
+    }
+    // 手前の黒
     &::before {
       content: '';
-      display: block;
+      // display: block;
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 60%;
-      background-color: rgba(0,0,0,.3);
+      background-color: rgba(0,0,0,.4);
       z-index: 1;
       @include breakpoint(tablet){
         height: 100%;
