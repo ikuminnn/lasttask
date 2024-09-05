@@ -1,0 +1,44 @@
+@use "../../foundation/variable" as *;
+@use "../../foundation/mixin" as *;
+
+.c-button {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  color: $color-font-70;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 6px 10px 0 0;
+  z-index: 300;
+  @include breakpoint(tablet){
+    padding: 10px 10px 0 0;
+    font-size: 21px;
+  }
+  @include breakpoint(pc){
+    display: none;
+  }
+  .open &-line {
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    top: 30px;
+    right: 15px;
+    background-color: $color-font-70;
+    transition: all 0.6s;
+  }
+  .open &-line1 {
+    transform: rotate(-45deg);
+    top: 30px;
+  }
+  .open &-line2 {
+    display: none;
+  }
+  .open &-line3 {
+    transform: rotate(45deg);
+    top: 30px;
+  }
+}
+.open.c-button {
+  width: 65px;
+  height: 60px;
+}

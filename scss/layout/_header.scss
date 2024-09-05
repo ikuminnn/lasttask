@@ -1,72 +1,18 @@
-@use "../foundation/variable" as v;
-@use "../foundation/mixin" as m;
+@use "../foundation/variable" as *;
+@use "../foundation/mixin" as *;
 
 .l-header {
-  &__content {
-    color: v.$color-font-70;
-    background-color: v.$color-header;  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 25px;
-    grid-column: 1;
-    grid-row: 1;
-    @include m.breakpoint(pc){
-      flex-direction: row;
-      justify-content: space-between;
-      padding: 0 25px 0 0;
-    }
-  }
-  &__button {
-    position: absolute;
-    right: 5px;
-    top: 5px;
-    color: v.$color-font-70;
-    font-weight: 600;
-    font-size: 18px;
-    padding: 6px 10px 0 0;
-    z-index: 300;
-    @include m.breakpoint(tablet){
-      padding: 10px 10px 0 0;
-      font-size: 21px;
-    }
-    @include m.breakpoint(pc){
-      display: none;
-    }
-    .open &-line {
-      position: absolute;
-      width: 50px;
-      height: 3px;
-      top: 30px;
-      right: 15px;
-      background-color: v.$color-font-70;
-      transition: all 0.6s;
-    }
-    .open &-line1 {
-      transform: rotate(-45deg);
-      top: 30px;
-    }
-    .open &-line2 {
-      display: none;
-    }
-    .open &-line3 {
-      transform: rotate(45deg);
-      top: 30px;
-    }
-  }
-  .open &__button {
-    width: 65px;
-    height: 60px;
-  }
-
-  &__title {
-    text-align: center;
-    font-size: 38px;
-    font-weight: 700;
-    margin: 40px 0 25px;
-    @include m.breakpoint(pc){
-      margin: 0;
-      padding-left: 40px;
-    }
+  color: $color-font-70;
+  background-color: $color-header;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 25px;
+  grid-column: 1;
+  grid-row: 1;
+  @include breakpoint(pc){
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 25px 0 0;
   }
 }

@@ -1,0 +1,13 @@
+@use "../../foundation/variable" as *;
+@use "../../foundation/mixin" as *;
+
+.c-list {
+  background: rgba(255,255,255,0.8);
+  padding: 16px;
+  &:first-child {
+    margin-bottom: 16px;
+  }
+  & p {
+    flex-grow: 1;
+  }
+}
