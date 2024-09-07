@@ -55,6 +55,9 @@
   .open &-bg {
     opacity: 0.8;
     visibility: visible;
-  }  
+  }
+  .open .js-menu {
+    display: block;
+  }
 }
 

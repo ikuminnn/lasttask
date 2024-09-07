@@ -2,6 +2,7 @@ window.onload = function () {
   var nav = document.querySelector('.l-nav');
   var hamburger = document.querySelector('.js-btn');
   var bgBlack = document.querySelector('.js-bg-black');
+  var menu = document.querySelector('.js-menu');
 
   // Meunアイコンをクリックしたらnav指定の要素にopenクラスを追加・削除する
   hamburger.addEventListener('click', function () {
@@ -11,6 +12,10 @@ window.onload = function () {
   bgBlack.addEventListener('click', function () {
     nav.classList.remove('open');
   });
+  menu.addEventListener('click', function () {
+    nav.classList.remove('open');
+  });
+
 }
 
 // $('.js-btn').click(function () {
