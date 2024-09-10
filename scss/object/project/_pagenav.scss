@@ -8,6 +8,9 @@
     justify-content: center;
     align-items: center;
   }
+  @include breakpoint(pc) {
+    padding-bottom: 60px;
+  }
   p {
     display: none;
     @include breakpoint(tablet) {

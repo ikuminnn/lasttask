@@ -39,8 +39,32 @@
     transform: rotate(45deg);
     top: 30px;
   }
+
+  &__menu {
+    display: block;
+    width: 160px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    margin: 45px auto 60px;
+    border-radius: 25px;
+    background-color: #fff;
+    color: $color-font-70;
+    font-weight: 700;
+    @include breakpoint(tablet) {
+      margin: 40px auto 50px;
+    }
+    @include breakpoint(pc) {
+      margin: 70px auto;
+      width: 300px;
+      height: 75px;
+      line-height: 75px;
+      border-radius: 35px;
+    }
+  }
 }
-// メニュー開いている時のボタン範囲
+
+// ナビ開いている時のボタン範囲
 .open .c-button {
   width: 65px;
   height: 60px;

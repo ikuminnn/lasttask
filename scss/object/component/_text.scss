@@ -1,0 +1,22 @@
+@use "../../foundation/variable" as *;
+@use "../../foundation/mixin" as *;
+
+.c-text {
+  &-archive {
+    font-size: 1.6rem;
+    position: absolute;
+    top: 38px;
+    left: 42px;
+    font-weight: 700;
+    @include breakpoint(tablet) {
+      font-size: 1.6rem;
+      top: 5px;
+      left: 240px;
+    }
+  }
+  &__theme {
+    p {
+      padding: 25px 0 15px;
+    }
+  }
+}

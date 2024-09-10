@@ -3,19 +3,21 @@
 @forward "./component/form";
 @forward "./component/section";
 @forward "./component/pagenav";
-@forward "./component/menu";
 @forward "./component/theme";
 @forward "./component/button";
 @forward "./component/title";
 @forward "./component/list";
-@forward "./component/menu";
+@forward "./component/text";
+@forward "./component/navi";
+@forward "./component/caption";
 
 // project
 @forward "./project/theme";
 @forward "./project/access";
 @forward "./project/pagenav";
-@forward "./project/menu";
+@forward "./project/navi";
 @forward "./project/footer";
+@forward "./project/list";
 
 // utility
 @forward "./utility/container";

@@ -1,7 +1,7 @@
 @use "../../foundation/variable" as *;
 @use "../../foundation/mixin" as *;
 
-.p-menu {
+.p-navi {
   position: fixed;
   right: -100%;
 /*　ハンバーガーボタンがクリックされる前はWindows右側に隠す*/

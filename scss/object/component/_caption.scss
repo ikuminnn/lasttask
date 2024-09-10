@@ -1,0 +1,30 @@
+@use "../../foundation/mixin" as *;
+@use "../../foundation/variable" as *;
+
+.c-caption {
+  color: #fff;
+  padding: 0 17px;
+  @include breakpoint(tablet) {
+    padding: 0 59px 0 30px;
+  }
+  @include breakpoint(pc) {
+    padding: 0 100px 0 60px;
+  }
+  h3 {
+    padding-top: 30px;
+    @include breakpoint(pc) {
+      font-size: 3rem;
+      padding-top: 50px;
+    }
+  }
+  h4 {
+    padding-top: 20px;
+    @include breakpoint(pc) {
+      font-size: 2rem;
+      padding-top: 40px;
+    }
+  }
+  p:nth-child(3) {
+    padding-top: 10px;
+  }
+}

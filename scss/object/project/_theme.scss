@@ -14,8 +14,20 @@
     padding: 100px 100px 100px;
     gap: 80px;
   }
+  &-archive {
+    padding: 20px 20px 25px;
+    display: flex;
+    flex-direction: column;
+    @include breakpoint(tablet) {
+      padding: 30px 35px 100px;
+    }
+    @include breakpoint(pc) {
+      padding: 60px 100px 140px;
+      row-gap: 70px;
+    }
+  }
 }
-.p-theme__lists {
+.p-theme__lists {   // index.html
   padding: 0 16px 16px;
   color: $color-font-10;
   margin-top: 300px;

@@ -8,8 +8,8 @@
 }
 
 html {
-  // height: 100%;
-  font-size: 62.5%;
+  height: 100%;
+  font-size: 62.5%;  // 10px
   line-height: 1.7;
   scroll-behavior: smooth;
 }
@@ -18,7 +18,7 @@ body {
   background-color: v.$color-base;
   width: 100%;
   min-height: 100%;
-  font-size: 1.6rem;
+  font-size: 1.6rem;  // 16px
   font-family: "Roboto", "M PLUS 1p", sans-serif;
   overflow-x: hidden;
 }

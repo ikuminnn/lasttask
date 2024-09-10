@@ -19,10 +19,10 @@
     <link rel="stylesheet" href="/css/style.min.css">
   </head>
 
-  <body class="u-container">
+  <body class="u-container__archive">
     <!-- header -->
-    <header class="l-header__content">
-      <h1 class="l-header__title"><a href="#">Hamburger</a></h1>
+    <header class="l-header">
+      <h1 class="c-title__header"><a href="#">Hamburger</a></h1>
       <div class="c-form__mark">
         <!-- <form action="#" class="c-form">   actionにサイトurlを入力してサイト内検索にする -->
         <input type="search" name="search" class="c-form__keyword">
@@ -32,16 +32,16 @@
     </header>
     <!-- サイドバーのメニュー -->
     <aside class="l-nav">
-      <button class="l-header__button js-btn">
-        <span class="l-header__button-line l-header__button-line1"></span>
-        <span class="l-header__button-line2">Menu</span>
-        <span class="l-header__button-line l-header__button-line3"></span>
+      <button class="c-button js-btn">
+        <span class="c-button-line c-button-line1"></span>
+        <span class="c-button-line2">Menu</span>
+        <span class="c-button-line c-button-line3"></span>
       </button>
-      <nav class="l-nav__content">
-        <p class="l-nav__title">Menu</p>
-        <ul class="l-nav__menu" aria-hidden="true">
-          <li class="c-nav__title"><h3><a href="#">バーガー</a></h3>
-            <ul class="c-nav__menu">
+      <nav class="p-navi">
+        <p class="c-title__navi">Menu</p>
+        <ul class="p-navi__content" aria-hidden="true">
+          <li class="c-title__navi-ttl"><h3><a href="#">バーガー</a></h3>
+            <ul class="c-navi">
               <li><a href="#">ハンバーガー</a></li>
               <li><a href="#">チーズバーガー</a></li>
               <li><a href="#">テリヤキバーガー</a></li>
@@ -51,16 +51,16 @@
               <li><a href="#">チキンバーガー</a></li>
             </ul>
           </li>
-          <li class="c-nav__title"><h3><a href="#">サイド</a></h3>
-            <ul class="c-nav__menu">
+          <li class="c-title__navi-ttl"><h3><a href="#">サイド</a></h3>
+            <ul class="c-navi">
               <li><a href="#">ポテト</a></li>
               <li><a href="#">サラダ</a></li>
               <li><a href="#">ナゲット</a></li>
               <li><a href="#">コーン</a></li>
             </ul>
           </li>
-          <li class="c-nav__title"><h3><a href="#">ドリンク</a></h3>
-            <ul class="c-nav__menu">
+          <li class="c-title__navi-ttl"><h3><a href="#">ドリンク</a></h3>
+            <ul class="c-navi">
               <li><a href="#">コーラ</a></li>
               <li><a href="#">ファンタ</a></li>
               <li><a href="#">オレンジ</a></li>
@@ -71,50 +71,59 @@
           </li>
         </ul>
       </nav>
-      <div class="c-nav__bg-black js-bg-black"></div>  <!--背景黒-->
+      <div class="p-navi-bg js-bg-black"></div>  <!--背景黒-->
     </aside>
 
     <!-- main -->
     <main class="u-main__container">
       <!-- p-fv　ファーストビュー -->
-      <section class="l-fv">
-        <div class="l-fv__content l-fv__bg">
-          <h2 class="l-fv__archive">Menu</h2>
-          <p class="l-fv__text">チーズバーガー</p>
+      <section class="l-fv l-fv__bg">
+        <div class="l-fv__content">
+          <h2 class="c-title__archive">Menu</h2>
+          <p class="c-text-archive">チーズバーガー</p>
         </div>
       </section>
       <!-- p-theme　takeout/eatin -->
-      <article class="p-theme__content">
-        <div class="c-theme__text">
+      <article class="p-theme-archive">
+        <div class="c-text__theme">
           <h2>小見出しが入ります。</h2>
-          <p>チーズバーガーについてのこだわりです。こういったものを大切にしています。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+          <p>チーズバーガーについてのこだわりです。こういったものを大切にしています。テキストが入ります。
+            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
         </div>
-        <section class="c-menu">
-          <figure class="c-menu__lists">
-            <img src="./img/menu-ham.jpg" alt="チーズバーガーの写真1">
-            <figcaption class="c-menu__list">
+        <section class="p-lists">
+          <figure class="p-list">
+            <img class="img-list" src="./img/menu-ham.jpg" alt="チーズバーガーの写真1">
+            <figcaption class="c-caption">
               <h3>チーズバーガー</h3>
               <h4>こだわり</h4>
-              <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-              <p class="c-menu__btn"><a href="#">詳しく見る</a></p>
+              <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+              <p><a class="c-button__menu" href="#">詳しく見る</a></p>
             </figcaption>
           </figure>
-          <figure class="c-menu__lists">
+          <figure class="p-list">
             <img src="./img/menu-ham.jpg" alt="チーズバーガーの写真2">
-            <figcaption class="c-menu__list">
+            <figcaption class="c-caption">
               <h3>ダブルチーズバーガー</h3>
               <h4>こだわり</h4>
-              <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-              <p class="c-menu__btn"><a href="#">詳しく見る</a></p>
+              <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+              <p><a class="c-button__menu" href="#">詳しく見る</a></p>
             </figcaption>
           </figure>
-          <figure class="c-menu__lists">
+          <figure class="p-list">
             <img src="./img/menu-ham.jpg" alt="チーズバーガーの写真3">
-            <figcaption class="c-menu__list">
+            <figcaption class="c-caption">
               <h3>スペシャルチーズバーガー</h3>
               <h4>こだわり</h4>
-              <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-              <p class="c-menu__btn"><a href="#">詳しく見る</a></p>
+              <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+              <p><a class="c-button__menu" href="#">詳しく見る</a></p>
             </figcaption>
           </figure>
         </section>
@@ -142,13 +151,13 @@
 
     <!-- footer -->
     <footer class="l-footer">
-      <div class="l-footer__content">
+      <div class="p-footer__content">
         <!-- <img src="/img/footer-back.png" alt="フッター背景"> -->
         <p><a href="#">ショップ情報</a><span><a href="#">ヒストリー</a></span></p>
-        <p class="l-footer__copyright"><small>Copyright: RaiseTech</small></p>
+        <p><small>Copyright: RaiseTech</small></p>
       </div>
     </footer>
-    <script src="./JavaScript/jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/nav.js"></script>
   </body>
 </html>
