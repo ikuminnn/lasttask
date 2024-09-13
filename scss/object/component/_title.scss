@@ -99,4 +99,36 @@
       }
     }
   }
+
+  // Archive Search
+  // ファーストビュー
+  &__search {
+    position: relative;
+    font-size: 3.6rem;
+    z-index: 10;
+    @include breakpoint(tablet) {
+      font-size: 5rem;
+    }
+
+    &::after {
+      content: ":";
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 115px;
+      @include breakpoint(tablet){
+        left: 155px;
+      }
+    }
+  }
+
+  // Single page
+  &__single {
+    position: absolute;
+    left: 26px;
+    font-size: 3.3rem;
+    @include breakpoint(tablet) {
+      font-size: 4.3rem;
+    }
+  }
 }

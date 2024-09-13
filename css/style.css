@@ -275,10 +275,10 @@ ul, li {
   color: #fff;
   background: url(/img/saittitle.jpg) center/cover no-repeat;
   width: 100%;
-  height: 300px;
 }
 .l-fv__content {
   position: relative;
+  height: 300px;
   padding-left: 40px;
   line-height: 300px;
 }
@@ -298,8 +298,18 @@ ul, li {
   background: black;
   opacity: 0.5;
 }
+.l-fv__content-single {
+  height: 250px;
+  line-height: 250px;
+}
+.l-fv__content-single::before {
+  display: none;
+}
 .l-fv__bg {
   background: url(/img/takeout.jpg) left center/cover no-repeat;
+}
+.l-fv__single {
+  background: url(/img/single-ham.jpg) left 70%/cover no-repeat;
 }
 
 .l-footer {
@@ -330,7 +340,6 @@ input {
     width: 35.1%;
   }
 }
-
 .c-form__mark::before {
   content: "";
   width: 25px;
@@ -341,11 +350,10 @@ input {
   top: 8px;
   left: 6px;
 }
-
 .c-form__keyword {
   background-color: #fff;
   margin-right: 15px;
-  text-indent: 3.2rem;
+  text-indent: 4rem;
   width: 68%;
 }
 @media (min-width: 768px) {
@@ -353,7 +361,6 @@ input {
     width: 72.5%;
   }
 }
-
 .c-form__button {
   font-size: 1.3rem;
   font-weight: 600;
@@ -645,6 +652,38 @@ input {
     left: 126px;
   }
 }
+.c-title__search {
+  position: relative;
+  font-size: 3.6rem;
+  z-index: 10;
+}
+@media (min-width: 768px) {
+  .c-title__search {
+    font-size: 5rem;
+  }
+}
+.c-title__search::after {
+  content: ":";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 115px;
+}
+@media (min-width: 768px) {
+  .c-title__search::after {
+    left: 155px;
+  }
+}
+.c-title__single {
+  position: absolute;
+  left: 26px;
+  font-size: 3.3rem;
+}
+@media (min-width: 768px) {
+  .c-title__single {
+    font-size: 4.3rem;
+  }
+}
 
 .c-list {
   background: rgba(255, 255, 255, 0.8);
@@ -657,7 +696,7 @@ input {
   flex-grow: 1;
 }
 
-.c-text-archive {
+.c-text__archive {
   font-size: 1.6rem;
   position: absolute;
   top: 38px;
@@ -665,10 +704,10 @@ input {
   font-weight: 700;
 }
 @media (min-width: 768px) {
-  .c-text-archive {
+  .c-text__archive {
     font-size: 1.6rem;
     top: 5px;
-    left: 240px;
+    left: 270px;
   }
 }
 .c-text__theme p {
@@ -737,7 +776,7 @@ input {
   }
 }
 .p-theme-archive {
-  padding: 20px 20px 25px;
+  padding: 20px 30px 25px;
   display: flex;
   flex-direction: column;
 }
@@ -971,7 +1010,7 @@ input {
 }
 
 .p-list {
-  width: 90%;
+  width: 100%;
   height: auto;
   background-color: #3c2b1c;
 }
