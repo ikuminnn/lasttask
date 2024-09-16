@@ -10,4 +10,30 @@
   & p {
     flex-grow: 1;
   }
+
+  // Single page
+  &__single {
+    margin-top: 30px;
+    @include breakpoint(tablet) {
+      margin-top: 60px;
+      padding-left: 50px;
+    }
+    ol, ul {
+      margin-top: 15px;
+    }
+    ol li {   // olの数字分を右に寄せている
+      list-style: decimal;
+      margin-left: 20px;
+    }
+    ul:nth-child(4) {
+      margin-top: 50px;
+    }
+  }
+  // 各リスト２つ目グループのインデント部分
+  &__block {
+    margin-left: 20px;
+    @include breakpoint(tablet) {
+      margin-left: 60px;
+    }
+  }
 }

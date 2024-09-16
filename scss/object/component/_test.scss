@@ -1,0 +1,17 @@
+@use "../../foundation/mixin" as *;
+
+.c-test {
+  margin-top: 30px;
+  column-gap: 10px;
+  display: flex;
+  @include breakpoint(tablet) {
+    margin-top: 60px;
+    &-02 {
+      margin-top: 110px;
+    }
+  }
+  img {
+    height: auto;
+    width: 43%;
+  }
+}

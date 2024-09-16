@@ -1,0 +1,19 @@
+@use "../../foundation/mixin" as *;
+
+.c-grid {
+  display: grid;
+  gap: 20px 0;
+  margin-top: 30px;
+  img {
+    width: 100%;
+  }
+  @include breakpoint(tablet) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 20px;
+    margin-top: 230px;
+  }
+  @include breakpoint(pc) {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 60px;
+  }
+}
