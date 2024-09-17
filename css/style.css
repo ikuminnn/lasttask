@@ -299,8 +299,14 @@ ul, li {
   opacity: 0.5;
 }
 .l-fv__content-single {
-  height: 250px;
-  line-height: 250px;
+  height: 300px;
+  line-height: 300px;
+}
+@media (min-width: 768px) {
+  .l-fv__content-single {
+    height: 500px;
+    line-height: 500px;
+  }
 }
 .l-fv__content-single::before {
   display: none;
@@ -310,6 +316,9 @@ ul, li {
 }
 .l-fv__single {
   background: url(/img/single-ham.jpg) left 70%/cover no-repeat;
+}
+.l-fv__about {
+  background: url(/img/about-shop.jpg) left 50%/cover no-repeat;
 }
 
 .l-footer {
@@ -625,12 +634,14 @@ input {
 @media (min-width: 768px) {
   .c-title__fv {
     padding-left: 80px;
+    font-size: 3.5rem;
   }
 }
 @media (min-width: 1280px) {
   .c-title__fv {
     height: 500px;
     line-height: 500px;
+    font-size: 4rem;
   }
 }
 .c-title__access {

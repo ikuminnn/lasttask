@@ -2,7 +2,7 @@
 
 .l-fv {
   color: #fff;
-  background: url(/img/saittitle.jpg) center/cover no-repeat;
+  background: url(/img/saittitle.jpg) center/cover no-repeat; // Front　背景
   width: 100%;
   // height: 300px;
   
@@ -26,8 +26,12 @@
       opacity: 0.5;
     }
     &-single {
-      height: 250px;
-      line-height: 250px;
+      height: 300px;
+      line-height: 300px;
+      @include breakpoint(tablet) {
+        height: 500px;
+        line-height: 500px;
+      }
       &::before {
         display: none;
       }
@@ -41,5 +45,9 @@
   // Single page背景
   &__single {
     background: url(/img/single-ham.jpg) left 70%/cover no-repeat;
+  }
+  // Sbout 背景
+  &__about {
+    background: url(/img/about-shop.jpg) left 50%/cover no-repeat;
   }
 }
