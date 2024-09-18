@@ -1273,26 +1273,6 @@ input {
     grid-template-rows: 7% 1fr 7%;
   }
 }
-.u-container__archive {
-  display: block;
-}
-@media (min-width: 1280px) {
-  .u-container__archive {
-    display: grid;
-    grid-template-columns: 80% 1fr;
-    grid-template-rows: 5% 1fr 5%;
-  }
-}
-.u-container__single {
-  display: block;
-}
-@media (min-width: 1280px) {
-  .u-container__single {
-    display: grid;
-    grid-template-columns: 80% 1fr;
-    grid-template-rows: 3% 1fr 3%;
-  }
-}
 
 .u-main__container {
   grid-column: 1;

@@ -8,23 +8,23 @@
     grid-template-rows: 7% 1fr 7%;
   }
 
-  // Archive, Archive-search
-  &__archive {
-    display: block;
-    @include breakpoint(pc) {
-      display: grid;
-      grid-template-columns: 80% 1fr;
-      grid-template-rows: 5% 1fr 5%;
-    }
-  }
+  // // Archive, Archive-search
+  // &__archive {
+  //   display: block;
+  //   @include breakpoint(pc) {
+  //     display: grid;
+  //     grid-template-columns: 80% 1fr;
+  //     grid-template-rows: 5% 1fr 5%;
+  //   }
+  // }
 
-  // Single
-  &__single {
-    display: block;
-    @include breakpoint(pc) {
-      display: grid;
-      grid-template-columns: 80% 1fr;
-      grid-template-rows: 3% 1fr 3%;
-    }
-  }
+  // // Single
+  // &__single {
+  //   display: block;
+  //   @include breakpoint(pc) {
+  //     display: grid;
+  //     grid-template-columns: 80% 1fr;
+  //     grid-template-rows: 3% 1fr 3%;
+  //   }
+  // }
 }
