@@ -227,7 +227,6 @@ html {
 body {
   background-color: #fffdfa;
   width: 100%;
-  min-height: 100%;
   font-size: 1.6rem;
   font-family: "Roboto", "M PLUS 1p", sans-serif;
   overflow-x: hidden;
@@ -603,7 +602,7 @@ input {
 @media (min-width: 1280px) {
   .c-title__navi {
     display: block;
-    padding: 60px 0 90px 38px;
+    padding: 50px 0 90px 38px;
     font-size: 2.8rem;
     font-weight: 700;
   }
@@ -639,7 +638,6 @@ input {
 }
 @media (min-width: 1280px) {
   .c-title__fv {
-    height: 500px;
     line-height: 500px;
     font-size: 4rem;
   }
@@ -1272,7 +1270,7 @@ input {
   .u-container {
     display: grid;
     grid-template-columns: 80% 1fr;
-    grid-template-rows: 8% 1fr 8%;
+    grid-template-rows: 7% 1fr 7%;
   }
 }
 .u-container__archive {
@@ -1282,7 +1280,7 @@ input {
   .u-container__archive {
     display: grid;
     grid-template-columns: 80% 1fr;
-    grid-template-rows: 8% 1fr 5%;
+    grid-template-rows: 5% 1fr 5%;
   }
 }
 .u-container__single {
@@ -1292,7 +1290,7 @@ input {
   .u-container__single {
     display: grid;
     grid-template-columns: 80% 1fr;
-    grid-template-rows: 4% 1fr 3%;
+    grid-template-rows: 3% 1fr 3%;
   }
 }
 
