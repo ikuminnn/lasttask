@@ -27,20 +27,11 @@
     }
   }
 }
-.p-theme__lists {   // index.html
+
+.p-theme__lists {   // front.html
   padding: 0 16px 16px;
   color: $color-font-10;
   margin-top: 300px;
   display: flex;
   flex-direction: column;
 }
-// .p-theme__list {
-//   background: rgba(255,255,255,0.8);
-//   padding: 16px;
-//   &:first-child {
-//     margin-bottom: 16px;
-//   }
-//   & p {
-//     flex-grow: 1;
-//   }
-// }
