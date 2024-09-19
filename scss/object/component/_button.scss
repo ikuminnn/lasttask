@@ -10,7 +10,6 @@
   font-size: 2rem;
   padding: 6px 10px 0 0;
   z-index: 300;
-  text-shadow: 1px 1px $color-header;
   @include breakpoint(tablet){
     padding: 10px 10px 0 0;
     font-size: 21px;
@@ -42,23 +41,24 @@
 
   &__menu {
     display: block;
-    width: 160px;
-    height: 45px;
-    line-height: 45px;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
     text-align: center;
-    margin: 45px auto 60px;
-    border-radius: 25px;
+    margin: 30px auto;
+    border-radius: 20px;
     background-color: #fff;
     color: $color-font-70;
     font-weight: 700;
+    font-size: 1.4rem;
     @include breakpoint(tablet) {
-      margin: 40px auto 50px;
+      margin: 30px auto 36px;
     }
     @include breakpoint(pc) {
-      margin: 70px auto;
-      width: 300px;
-      height: 75px;
-      line-height: 75px;
+      margin: 55px auto;
+      width: 250px;
+      height: 70px;
+      line-height: 70px;
       border-radius: 35px;
     }
   }
